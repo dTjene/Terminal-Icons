@@ -14,6 +14,10 @@ function ConvertFrom-ColorEscapeSequence {
         $g   = '{0:x}' -f [int]$arr[3]
         $b   = '{0:x}' -f [int]$arr[4].TrimEnd('m')
 
+        if ($r.Length -eq 1) { $r = '0'+$r }
+        if ($g.Length -eq 1) { $g = '0'+$g }
+        if ($b.Length -eq 1) { $b = '0'+$b }
+
         ($r + $g + $b).ToUpper()
     }
 }
