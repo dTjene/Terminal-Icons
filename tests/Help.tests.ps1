@@ -9,7 +9,7 @@ Describe 'Help' {
     }
 
     BeforeAll {
-        $commonParameters = 'Debug', 'ErrorAction', 'ErrorVariable', 'InformationAction', 'InformationVariable', 'OutBuffer',
+        $commonParameters = 'Debug', 'ErrorAction', 'ErrorVariable', 'InformationAction', 'InformationVariable', 'ProgressAction', 'OutBuffer',
                             'OutVariable', 'PipelineVariable', 'Verbose', 'WarningAction', 'WarningVariable', 'Confirm', 'Whatif'
     }
 
