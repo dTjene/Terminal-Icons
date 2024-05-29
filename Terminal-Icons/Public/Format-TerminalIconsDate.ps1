@@ -23,7 +23,7 @@ function Format-TerminalIconsDate {
     )
 
     if ($CurrentSettings.DateTimeFormat -eq [DateTimeFormat]::HUMANIZE) {
-        $isUtc = $CurrentSettings.TimeZoneDisplay -eq [DataTimeZone]::UTC
+        $isUtc = $CurrentSettings.TimeZoneDisplay -eq [TimeZoneDisplay]::UTC
         $DateTime.Humanize($isUtc)
     } else {
         if ($CurrentSettings.TimeZoneDisplay -eq [TimeZoneDisplay]::UTC) {
