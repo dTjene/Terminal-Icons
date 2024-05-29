@@ -3,7 +3,6 @@ InModuleScope 'Terminal-Icons' {
         Context 'Themes' {
             AfterAll {
                 $themeStorage = Get-ThemeStoragePath
-                Set-TerminalIconsTheme -ColorTheme devblackops -IconTheme devblackops
                 Remove-Item (Join-Path $themeStorage 'MyAwesomeTheme_icon.xml') -Force -ErrorAction SilentlyContinue
             }
 
