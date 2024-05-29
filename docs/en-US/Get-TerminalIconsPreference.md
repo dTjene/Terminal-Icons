@@ -5,43 +5,43 @@ online version:
 schema: 2.0.0
 ---
 
-# Set-TerminalIconsColorTheme
+# Get-TerminalIconsPreference
 
 ## SYNOPSIS
-Set the Terminal-Icons color theme.
+Gets the current preferences for Terminal-Icons.
 
 ## SYNTAX
 
 ```
-Set-TerminalIconsColorTheme [-Name] <String> [<CommonParameters>]
+Get-TerminalIconsPreference [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Set the Terminal-Icons color theme to a registered theme.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Set-TerminalIconsColorTheme -Name devblackops
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-Set the color theme to 'devblackops'.
+{{ Add example description here }}
 
 ## PARAMETERS
 
-### -Name
-The name of a registered color theme.
+### -ProgressAction
+{{ Fill ProgressAction Description }}
 
 ```yaml
-Type: String
+Type: ActionPreference
 Parameter Sets: (All)
-Aliases:
+Aliases: proga
 
-Required: True
-Position: 1
+Required: False
+Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -50,18 +50,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
-### The name of a registered color theme.
+### None
 ## OUTPUTS
 
-### None.
+### TerminalIcons preferences
 ## NOTES
 
 ## RELATED LINKS
 
-[Set-TerminalIconsIconTheme]()
-
-[Get-TerminalIconsColorTheme]()
-
-[Get-TerminalIconsIconTheme]()
+[Set-TerminalIconsPreference]()
 

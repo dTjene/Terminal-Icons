@@ -3,7 +3,6 @@ InModuleScope 'Terminal-Icons' {
         Context 'Themes' {
             AfterAll {
                 $themeStorage = Get-ThemeStoragePath
-                Set-TerminalIconsTheme -ColorTheme devblackops -IconTheme devblackops
                 Remove-Item (Join-Path $themeStorage 'MyAwesomeTheme_icon.xml') -Force -ErrorAction SilentlyContinue
             }
 
@@ -11,8 +10,8 @@ InModuleScope 'Terminal-Icons' {
 
             it 'Good theme should be added' {
                 Add-TerminalIconsIconTheme -Path $PSScriptRoot/../MyAwesomeIconTheme.psd1 -Force
-                $script:userThemeData.Themes.Icon['MyAwesomeTheme']      | Should -BeOfType System.Collections.Hashtable
-                $script:userThemeData.Themes.Icon['MyAwesomeTheme'].Name | Should -Be 'MyAwesomeTheme'
+                $script:current.Themes.Icon['MyAwesomeTheme']      | Should -BeOfType System.Collections.Hashtable
+                $script:current.Themes.Icon['MyAwesomeTheme'].Name | Should -Be 'MyAwesomeTheme'
             }
 
             it 'Bad theme path should throw' {

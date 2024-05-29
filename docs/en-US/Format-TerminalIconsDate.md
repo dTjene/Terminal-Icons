@@ -5,32 +5,46 @@ online version:
 schema: 2.0.0
 ---
 
-# Show-TerminalIconsTheme
+# Format-TerminalIconsDate
 
 ## SYNOPSIS
-List example directories and files to show the currently applied color and icon themes.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
 ```
-Show-TerminalIconsTheme [[-CurrentSettings] <Hashtable>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Format-TerminalIconsDate [[-DateTime] <DateTime>] [[-CurrentSettings] <Hashtable>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-List example directories and files to show the currently applied color and icon themes.
-The directory/file objects show are in memory only, they are not written to the filesystem.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Show-TerminalIconsTheme
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-List example directories and files to show the currently applied color and icon themes.
+{{ Add example description here }}
 
 ## PARAMETERS
+
+### -DateTime
+{{ Fill DateTime Description }}
+
+```yaml
+Type: DateTime
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -CurrentSettings
 {{ Fill CurrentSettings Description }}
@@ -41,7 +55,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 1
+Position: 2
 Default value: $script:current
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -67,20 +81,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None.
+### None
 ## OUTPUTS
 
-### System.IO.DirectoryInfo
-### System.IO.FileInfo
+### System.Object
 ## NOTES
-Example directory and file objects only exist in memory.
-They are not written to the filesystem.
 
 ## RELATED LINKS
-
-[Get-TerminalIconsColorTheme]()
-
-[Get-TerminalIconsIconTheme]()
-
-[Get-TerminalIconsTheme]()
-

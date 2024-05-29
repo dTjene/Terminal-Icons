@@ -13,8 +13,8 @@ Removes a color or icon theme
 ## SYNTAX
 
 ```
-Remove-TerminalIconsTheme [[-IconTheme] <String>] [[-ColorTheme] <String>] [-Force] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-TerminalIconsTheme [[-IconTheme] <String>] [[-ColorTheme] <String>] [[-CurrentSettings] <Hashtable>]
+ [-Force] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,6 +69,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CurrentSettings
+{{ Fill CurrentSettings Description }}
+
+```yaml
+Type: Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 3
+Default value: $script:current
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Force
 Bypass confirmation messages.
 
@@ -106,6 +121,21 @@ Prompts you for confirmation before running the cmdlet.
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named
