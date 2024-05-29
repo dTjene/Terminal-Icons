@@ -16,7 +16,7 @@ schema: 2.0.0
 Set-TerminalIconsPreference [[-IconTheme] <String>] [[-ColorTheme] <String>]
  [[-DateTimeFormat] <DateTimeFormat>] [[-TimeZoneDisplay] <TimeZoneDisplay>] [[-RendorMode] <RendorMode>]
  [[-FileSizeDisplay] <FileSizeDisplay>] [[-Preferences] <Preferences>] [[-CurrentSettings] <Hashtable>]
- [-PassThru] [<CommonParameters>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -164,6 +164,21 @@ Accept wildcard characters: False
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
 
 Required: False
 Position: Named

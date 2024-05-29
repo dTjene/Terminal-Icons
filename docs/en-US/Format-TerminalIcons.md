@@ -13,7 +13,8 @@ Prepend a custom icon (with color) to the provided file or folder object when di
 ## SYNTAX
 
 ```
-Format-TerminalIcons [-FileInfo] <FileSystemInfo> [[-CurrentSettings] <Hashtable>] [<CommonParameters>]
+Format-TerminalIcons [-FileInfo] <FileSystemInfo> [[-CurrentSettings] <Hashtable>]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,6 +64,21 @@ Aliases:
 
 Required: False
 Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

@@ -13,7 +13,7 @@ Gets the list of glyphs known to Terminal-Icons.
 ## SYNTAX
 
 ```
-Get-TerminalIconsGlyphs [[-Glyphs] <Hashtable>] [<CommonParameters>]
+Get-TerminalIconsGlyphs [[-Glyphs] <Hashtable>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,6 +42,21 @@ Aliases:
 Required: False
 Position: 1
 Default value: $script:glyphs
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

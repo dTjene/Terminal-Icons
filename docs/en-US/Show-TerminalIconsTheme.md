@@ -13,7 +13,8 @@ List example directories and files to show the currently applied color and icon 
 ## SYNTAX
 
 ```
-Show-TerminalIconsTheme [[-CurrentSettings] <Hashtable>] [<CommonParameters>]
+Show-TerminalIconsTheme [[-CurrentSettings] <Hashtable>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,6 +43,21 @@ Aliases:
 Required: False
 Position: 1
 Default value: $script:current
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
