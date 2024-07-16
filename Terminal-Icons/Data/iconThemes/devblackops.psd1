@@ -307,6 +307,7 @@
 
             # Subtitle files
             '.srt'                  = 'nf-md-file_document'
+            '.sup'                  = 'nf-md-file_document'
             '.lrc'                  = 'nf-md-file_document'
             '.ass'                  = 'nf-fa-eye'
 
@@ -417,6 +418,8 @@
             '.wav'                  = 'nf-fa-file_audio_o'
             '.aac'                  = 'nf-fa-file_audio_o'
             '.opus'                 = 'nf-fa-file_audio_o'
+            '.dsf'                  = 'nf-fa-file_audio_o'
+            '.dff'                 = 'nf-fa-file_audio_o'
 
             # Images
             '.png'                  = 'nf-fa-file_image_o'
@@ -473,6 +476,8 @@
             '.mpe'                  = 'nf-fa-file_video_o'
             '.mpv'                  = 'nf-fa-file_video_o'
             '.m2v'                  = 'nf-fa-file_video_o'
+            '.mpls'                 = 'nf-fa-file_video_o'
+            '.m2ts'                 = 'nf-fa-file_video_o'
 
             # Email
             '.ics'                  = 'nf-fa-calendar'
