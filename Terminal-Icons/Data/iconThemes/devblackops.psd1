@@ -266,7 +266,7 @@
             '.vcxitems'             = 'nf-dev-visualstudio'
             '.vcxitems.filters'     = 'nf-dev-visualstudio'
             '.vcxproj'              = 'nf-dev-visualstudio'
-            '.vsxproj.filters'      = 'nf-dev-visualstudio'
+            '.vcxproj.filters'      = 'nf-dev-visualstudio'
 
             # CSharp
             '.cs'                   = 'nf-md-language_csharp'
