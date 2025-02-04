@@ -13,7 +13,7 @@ Gets the list of glyphs known to Terminal-Icons.
 ## SYNTAX
 
 ```
-Get-TerminalIconsGlyphs [<CommonParameters>]
+Get-TerminalIconsGlyphs [[-Glyphs] <Hashtable>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,6 +30,36 @@ Get-TerminalIconsGlyphs
 Gets the table of glyph names and icons.
 
 ## PARAMETERS
+
+### -Glyphs
+{{ Fill Glyphs Description }}
+
+```yaml
+Type: Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 1
+Default value: $script:glyphs
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).

@@ -5,23 +5,18 @@ online version:
 schema: 2.0.0
 ---
 
-# Set-TerminalIconsTheme
+# Set-TerminalIconsPreference
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
 
 ## SYNTAX
 
-### theme (Default)
 ```
-Set-TerminalIconsTheme [-IconTheme <String>] [-ColorTheme <String>] [-Force]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### notheme
-```
-Set-TerminalIconsTheme [-DisableColorTheme] [-DisableIconTheme] [-Force] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-TerminalIconsPreference [[-IconTheme] <String>] [[-ColorTheme] <String>]
+ [[-DateTimeFormat] <DateTimeFormat>] [[-TimeZoneDisplay] <TimeZoneDisplay>] [[-RendorMode] <RendorMode>]
+ [[-FileSizeDisplay] <FileSizeDisplay>] [[-Preferences] <Preferences>] [[-CurrentSettings] <Hashtable>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,11 +38,11 @@ PS C:\> {{ Add example code here }}
 
 ```yaml
 Type: String
-Parameter Sets: theme
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -58,83 +53,117 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: theme
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisableColorTheme
-Disables custom colors and uses default terminal color.
+### -DateTimeFormat
+{{ Fill DateTimeFormat Description }}
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: notheme
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisableIconTheme
-Disables custom icons and shows only shows the directory or file name.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: notheme
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Force
-Bypass confirmation messages.
-
-```yaml
-Type: SwitchParameter
+Type: DateTimeFormat
 Parameter Sets: (All)
 Aliases:
+Accepted values: ISO8601, HUMANIZE, SORTABLE, RFC1123, GENERAL_SHORT_TIME, GENERAL_LONG_TIME, FULL_SHORT_TIME, FULL_LONG_TIME
 
 Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
-
-Required: False
-Position: Named
+Position: 3
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -TimeZoneDisplay
+{{ Fill TimeZoneDisplay Description }}
+
+```yaml
+Type: TimeZoneDisplay
+Parameter Sets: (All)
+Aliases:
+Accepted values: Local, UTC
+
+Required: False
+Position: 4
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RendorMode
+{{ Fill RendorMode Description }}
+
+```yaml
+Type: RendorMode
+Parameter Sets: (All)
+Aliases:
+Accepted values: Normal, Bold, Italic, Underline
+
+Required: False
+Position: 5
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FileSizeDisplay
+{{ Fill FileSizeDisplay Description }}
+
+```yaml
+Type: FileSizeDisplay
+Parameter Sets: (All)
+Aliases:
+Accepted values: Bytes, KB_MB_GB
+
+Required: False
+Position: 6
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Preferences
+{{ Fill Preferences Description }}
+
+```yaml
+Type: Preferences
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 7
+Default value: $script:prefs
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CurrentSettings
+{{ Fill CurrentSettings Description }}
+
+```yaml
+Type: Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 8
+Default value: $script:Current
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: cf
+Aliases:
 
 Required: False
 Position: Named
@@ -163,8 +192,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
-
+### None
 ## OUTPUTS
 
 ### System.Object
