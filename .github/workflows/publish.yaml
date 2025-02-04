@@ -7,36 +7,10 @@ Here are a few recommendations to improve your GitHub Actions workflow:
 Here's a revised version of your workflow with these recommendations:
 
 ```yaml
-name: Publish module
-on:
-  workflow_dispatch:
-  release:
-    types: [published]
-
-jobs:
-  terraform_publish:
-    name: Publish module
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Set up environment
-        run: echo "Setting up environment variables"
-        env:
-          PSGalleryApiKey: ${{ secrets.PS_GALLERY_API_KEY }}
-      
-      - name: Publish module
-        id: publish
-        shell: pwsh
-        run: |
-          try {
-            $apiKey = $env:PSGalleryApiKey | ConvertTo-SecureString -AsPlainText -Force
-            $cred = [pscredential]::new('apikey', $apiKey)
-            ./build.ps1 -Task Publish -PSGalleryApiKey $cred -Bootstrap
-          } catch {
-            Write-Error "Publishing failed: $_"
-            exit 1
-          }
-```
-
-These changes help keep your secrets secure, improve error handling, and lay the groundwork for further optimizations.
+      - name: Publish PowerShell Module
+        uses: natescherer/publish-powershell-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: packages
+          path: src
